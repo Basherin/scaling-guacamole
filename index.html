@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAST Face Droop — Demo</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="banner">
+    <h1>FAST Face Droop (Prototype)</h1>
+    <p class="note">Educational only — not a diagnostic tool.</p>
+  </header>
+
+  <main class="container">
+    <div class="video-panel">
+      <video id="video" playsinline autoplay muted></video>
+      <canvas id="overlay"></canvas>
+    </div>
+
+    <aside class="controls">
+      <button id="startBtn">Start Camera</button>
+      <button id="snapBtn">Capture Frame</button>
+      <div id="result" class="result">Camera ready - detecting...</div>
+      <div id="metrics" class="metrics"></div>
+    </aside>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
